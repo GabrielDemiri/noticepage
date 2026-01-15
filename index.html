@@ -1,1 +1,122 @@
-<h1>Il sito e in via di svilupo, puoi provare https://brave.com/it/ oppure https://www.chromium.org/chromium-projects/ nel mentre noi f̵o̵t̵t̵i̵a̵m̵o̵ ̵l̵a̵ ̵s̵o̵u̵r̵c̵e̵ ̵d̵i̵ ̵c̵h̵r̵o̵m̵i̵u̵m̵  costruiamo un browser addato alle tue esigenze!</h1>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>404 – Browser in costruzione (ma con stile)</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #0f0;
+      font-family: "Courier New", Courier, monospace;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .container {
+      max-width: 900px;
+      padding: 30px;
+      animation: glitch 4s infinite;
+    }
+    
+    h1 {
+      font-size: 4.8rem;
+      margin: 0;
+      text-shadow: 
+        0 0 10px #0f0,
+        0 0 20px #0f0,
+        0 0 40px #0f0;
+      letter-spacing: 6px;
+    }
+    
+    .subtitle {
+      font-size: 1.9rem;
+      margin: 30px 0;
+      line-height: 1.5;
+    }
+    
+    .strikethrough {
+      text-decoration: line-through;
+      text-decoration-thickness: 4px;
+      text-decoration-color: #f44;
+      opacity: 0.7;
+    }
+    
+    .blink {
+      animation: blink 1.2s step-end infinite;
+    }
+    
+    .links {
+      margin-top: 50px;
+      font-size: 1.5rem;
+    }
+    
+    a {
+      color: #00ff9d;
+      text-decoration: none;
+      border-bottom: 2px dashed #00ff9d;
+      transition: all 0.3s;
+    }
+    
+    a:hover {
+      color: #ff2a6d;
+      border-bottom-color: #ff2a6d;
+      text-shadow: 0 0 15px #ff2a6d;
+    }
+    
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 1.1rem;
+      opacity: 0.6;
+    }
+    
+    @keyframes glitch {
+      0%, 100% { transform: translate(0); }
+      2%   { transform: translate(-2px, 2px); }
+      4%   { transform: translate(2px, -2px); }
+      6%   { transform: translate(-3px, 1px); }
+      8%   { transform: translate(3px, -1px); }
+      10%  { transform: translate(0); }
+    }
+    
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>WORK<span class="blink">_</span> IN PROGRESS</h1>
+  
+  <div class="subtitle">
+    Il sito è ancora in fase di sviluppo estremo<br>
+    puoi provare nel mentre:<br><br>
+    
+    <div class="links">
+      <a href="https://brave.com/it/" target="_blank">→ https://brave.com/it/</a><br>
+      oppure<br>
+      <a href="https://www.chromium.org/chromium-projects/" target="_blank">→ https://www.chromium.org/chromium-projects/</a>
+    </div>
+    
+    <br><br>
+    
+    …mentre noi <span class="strikethrough">fottiamo la source di chromium</span><br>
+    costruiamo un browser<br>
+    <strong>adattato alle tue esigenze più perverse</strong> 😈
+  </div>
+</div>
+
+<div class="footer">
+  versione alpha 0.0.1 – pray for us
+</div>
+
+</body>
+</html>
